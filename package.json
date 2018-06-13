@@ -1,0 +1,21 @@
+{
+  "name": "matchgame",
+  "version": "1.0.0",
+  "description": "Generate Word Match game.",
+  "main": "src/matchgame.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctrlaltdev/matchgame.git"
+  },
+  "keywords": [
+    "word",
+    "match",
+    "pairing",
+    "game"
+  ],
+  "authors": ["Yorick <yorick@ctrlaltdev.xyz>"],
+  "bugs": {
+    "url": "https://github.com/ctrlaltdev/matchgame/issues"
+  },
+  "homepage": "https://github.com/ctrlaltdev/matchgame#README"
+}
