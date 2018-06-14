@@ -24,7 +24,7 @@ class matchGame {
     let keys = Object.keys(elements)
     let values = Object.values(elements)
 
-    keys.map(key, i, (key, i) => {
+    keys.map((key, i) => {
       console.log(key)
       console.log(values[i])
       console.log(haikunator.haikunate())
