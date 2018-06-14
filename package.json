@@ -13,9 +13,14 @@
     "pairing",
     "game"
   ],
-  "authors": ["Yorick <yorick@ctrlaltdev.xyz>"],
+  "authors": [
+    "Yorick <yorick@ctrlaltdev.xyz>"
+  ],
   "bugs": {
     "url": "https://github.com/ctrlaltdev/matchgame/issues"
   },
-  "homepage": "https://github.com/ctrlaltdev/matchgame#README"
+  "homepage": "https://github.com/ctrlaltdev/matchgame#README",
+  "dependencies": {
+    "haikunator": "^2.0.0"
+  }
 }

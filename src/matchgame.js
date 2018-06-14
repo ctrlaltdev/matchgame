@@ -1,3 +1,6 @@
+import haikunator from '../node_modules/haikunator/lib/haikunator.js'
+var haikunator = new Haikunator()
+
 /**
  *Create a word match game
  * @class wordMatch
@@ -14,12 +17,11 @@ class matchGame {
     this.elements = elements
     this.domElem = domElem
     
-    this.elements.map(elem, this.placeMatchees)
+    this.placeMatchees(this.elements)
   }
 
-  placeMatchees(element) {
-
-
+  placeMatchees(elements) {
+    console.log(elements)
   }
 
   /**
