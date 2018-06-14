@@ -1,4 +1,4 @@
-import haikunator from '../node_modules/haikunator/lib/haikunator.js'
+import Haikunator from '../node_modules/haikunator/lib/haikunator.js'
 var haikunator = new Haikunator()
 
 /**
