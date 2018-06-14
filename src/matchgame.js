@@ -9,7 +9,7 @@ class matchGame {
 
   /**
    *Creates an instance of matchGame.
-   * @param {!Array.<Array.<Object>>} elements Array of arrays of object, representing the lists that can match together
+   * @param {!Array.<Array>} elements Arrays of arrays representing the lists that can match together
    * @param {!HTMLElement} domElem the container of the game
    * @memberof matchGame
    */
@@ -20,15 +20,28 @@ class matchGame {
     this.placeMatchees(this.elements)
   }
 
-  placeMatchees(elements) {
-    let keys = Object.keys(elements)
-    let values = Object.values(elements)
+  verifyLists(list) {
+    let length = list[0].length
+    for (let i = 0, k = list.length ; i < k ; i++) {
+      if (list[i].length !== length) {
+        return false
+      }
+    }
+    return true
+  }
 
-    keys.map((key, i) => {
-      console.log(key)
-      console.log(values[i])
-      console.log(haikunator.haikunate())
-    })
+  placeMatchees(elements) {
+    if (this.verifyLists(elements)) {
+      for (let i = 0, k = elements[0].length ; i < k ; i++) {
+        for (let j = 0, l = elements.length ; j < l ; l++) {
+          console.log(elements[j][i])
+        }
+        console.info(haikunator.haikunate())
+      }
+    } else {
+      console.warn('The lists don\'t contain the same number of elements')
+      return false
+    }
   }
 
   /**
