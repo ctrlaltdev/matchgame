@@ -200,6 +200,9 @@ class matchGame {
       let matched = this.domElem.querySelectorAll('.selected');
       [].forEach.call(matched, (match) => {
         match.classList.replace('selected','found')
+        let matchParent = match.parentNode
+        matchParent.removeChild(match)
+        matchParent.insertBefore(match, matchParent.firstChild)
       })
       this.clearMatchees()
     }
